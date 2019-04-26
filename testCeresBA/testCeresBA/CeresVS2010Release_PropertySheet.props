@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <ExecutablePath>C:\Program Files\gflags\bin;C:\Program Files\glog\bin;D:\Ceres Install\suitesparse-metis-for-windows-master build\install\bin;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>C:\Program Files\Ceres\include;C:\Program Files\Eigen\include;C:\Program Files\Eigen\include\eigen3;C:\Program Files\gflags\include;C:\Program Files\glog\include;D:\Ceres Install\suitesparse-metis-for-windows-master build\SuiteSparse;D:\Ceres Install\suitesparse-metis-for-windows-master build\install\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Ceres\lib;C:\Program Files\gflags\lib;C:\Program Files\glog\lib;D:\Ceres Install\suitesparse-metis-for-windows-master build\lib;D:\Ceres Install\suitesparse-metis-for-windows-master build\install\lib64\lapack_blas_windows;D:\Ceres Install\suitesparse-metis-for-windows-master build\install\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>ceres.lib;glog.lib;gflags.lib;gflags_nothreads.lib;libamd.lib;libbtf.lib;libcamd.lib;libccolamd.lib;libcholmod.lib;libcolamd.lib;libcxsparse.lib;libklu.lib;libldl.lib;libspqr.lib;libumfpack.lib;suitesparseconfig.lib;libblas.lib;liblapack.lib</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
